@@ -1,0 +1,24 @@
+﻿<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>Naos.Build</id>
+    <version>$version$</version>
+	<authors>Naos Project</authors>
+    <copyright>Copyright (c) 2016 Naos LLC</copyright>
+    <projectUrl>http://naosproject.com</projectUrl>
+    <iconUrl>http://getthinktank.wpengine.com/wp-content/uploads/2016/05/NAOS-NuGet-Icon.png</iconUrl>
+    <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>The internal supporting build tools for all Naos builds.</description>
+    <tags>CI, Build</tags>
+	<dependencies>
+		<dependency id="Spritely.Build" version="[0.2.1,1)" />
+		<dependency id="Spritely.Build.JavaScriptTests" version="[0.3.14,1)" />
+		<dependency id="Naos.Powershell.Build" version="[1.2.51,2)" />
+	</dependencies>
+  </metadata>  
+  <files>
+    <file src="Settings.StyleCop" target="scripts" />
+    <file src="NaosNuSpecTemplate.nuspec" target="scripts" />
+  </files>  
+</package>
