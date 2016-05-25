@@ -19,6 +19,6 @@
   </metadata>  
   <files>
     <file src="Settings.StyleCop" target="scripts" />
-    <file src="NaosNuSpecTemplate.nuspec" target="scripts" />
+    <file src="NaosNuSpecTemplate.template-nuspec" target="scripts" />
   </files>  
 </package>
