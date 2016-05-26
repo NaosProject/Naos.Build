@@ -4,7 +4,7 @@
     <authors>Naos Project</authors>
     <copyright>Copyright (c) 2016 Naos LLC</copyright>
     <projectUrl>http://naosproject.com</projectUrl>
-    <iconUrl>http://getthinktank.wpengine.com/wp-content/uploads/2016/05/NAOS-NuGet-Icon.png</iconUrl>
+    <iconUrl>https://raw.githubusercontent.com/NaosProject/Naos.Build/master/NAOS-NuGet-Icon.png</iconUrl>
     <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
   </metadata>
