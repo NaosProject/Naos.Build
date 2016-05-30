@@ -6,7 +6,7 @@
 	<authors>Naos Project</authors>
     <copyright>Copyright (c) 2016 Naos LLC</copyright>
     <projectUrl>http://naosproject.com</projectUrl>
-    <iconUrl>https://raw.githubusercontent.com/NaosProject/Naos.Build/master/NAOS-NuGet-Icon.png</iconUrl>
+    <iconUrl>https://raw.githubusercontent.com/NaosProject/Naos.Build/master/NAOS-NuGet-Icon-v2.png</iconUrl>
     <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>The internal supporting build tools for all Naos builds.</description>
