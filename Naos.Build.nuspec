@@ -14,7 +14,7 @@
 	<dependencies>
 		<dependency id="Spritely.Build" version="[0.2.1,1)" />
 		<dependency id="Spritely.Build.JavaScriptTests" version="[0.3.14,1)" />
-		<dependency id="Naos.Powershell.Build" version="(,2)" />
+		<dependency id="Naos.Powershell.Build" version="" />
 	</dependencies>
   </metadata>  
   <files>
