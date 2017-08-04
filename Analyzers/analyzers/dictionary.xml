@@ -23,7 +23,11 @@
       <Word>deployer</Word>
       <Word>Dist</Word>
       <Word>FY</Word>
+      <Word>Gb</Word>
+      <Word>Hangfire</Word>
+      <Word>ip</Word>
       <Word>json</Word>
+      <Word>Kb</Word>
       <Word>Loggly</Word>
       <Word>Mfa</Word>
       <Word>namer</Word>
@@ -62,6 +66,9 @@
       <Term CompoundAlternate="RollUp">rollup</Term>
       <Term CompoundAlternate="Sa">sa</Term>
       <Term CompoundAlternate="TurnOff">turnoff</Term>
+      <Term CompoundAlternate="UserName">username</Term>
+      <Term CompoundAlternate="Username">username</Term>
+      <Term CompoundAlternate="username">username</Term>
       <Term CompoundAlternate="WebServer">webserver</Term>
       <Term CompoundAlternate="WinRm">winrm</Term>
       <Term CompoundAlternate="YearEnd">yearend</Term>
