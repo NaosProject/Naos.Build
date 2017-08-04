@@ -3,7 +3,7 @@
   "settings": {
     "documentationRules": {
       "companyName": "Naos",
-      "copyrightText": "Copyright (c) {companyName} 2017. All Rights Reserved.",
+      "copyrightText": "   Copyright (c) {companyName} 2017. All Rights Reserved.",
       "xmlHeader": true,
       "fileNamingConvention": "StyleCop"
     },
@@ -27,6 +27,7 @@
         "db",
 		"ip",
 		"co",
+		"to",
       ]
     }
   }
