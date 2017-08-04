@@ -2,6 +2,7 @@
 <package>
   <metadata>
     <id>Naos.Build.Conventions.RepoConfig</id>
+    <version>$version$</version>
 	<authors>Naos Project</authors>
     <copyright>Copyright (c) 2017 Naos LLC</copyright>
     <projectUrl>http://naosproject.com</projectUrl>
