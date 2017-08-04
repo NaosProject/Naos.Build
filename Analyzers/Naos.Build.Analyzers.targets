@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<PropertyGroup>
+		<RootNamespaceEndsWithTest>$(RootNamespace.EndsWith('Test'))</RootNamespaceEndsWithTest>
+		<RootNamespaceEndsWithTests>$(RootNamespace.EndsWith('Tests'))</RootNamespaceEndsWithTests>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(RootNamespaceEndsWithTest)' == 'False' And '$(RootNamespaceEndsWithTests)' == 'False'">
+        <CodeAnalysisRuleSet>./.analyzers/release.ruleset</CodeAnalysisRuleSet>
+		<CodeAnalysisTreatWarningsAsErrors>false</CodeAnalysisTreatWarningsAsErrors>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(RootNamespaceEndsWithTest)' == 'True' Or '$(RootNamespaceEndsWithTests)' == 'True'">
+        <CodeAnalysisRuleSet>./.analyzers/test.ruleset</CodeAnalysisRuleSet>
+		<CodeAnalysisTreatWarningsAsErrors>false</CodeAnalysisTreatWarningsAsErrors>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)' == 'Debug' ">
+        <RunCodeAnalysis>false</RunCodeAnalysis>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)' == 'Release' ">
+        <RunCodeAnalysis>true</RunCodeAnalysis>
+    </PropertyGroup>
+    <ItemGroup>
+        <CodeAnalysisDictionary Include="./.analyzers/dictionary.xml" />
+    </ItemGroup>
+</Project>

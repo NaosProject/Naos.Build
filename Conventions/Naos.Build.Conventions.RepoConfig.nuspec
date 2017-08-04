@@ -1,0 +1,22 @@
+﻿<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>Naos.Build.Conventions.RepoConfig</id>
+	<authors>Naos Project</authors>
+    <copyright>Copyright (c) 2017 Naos LLC</copyright>
+    <projectUrl>http://naosproject.com</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/NaosProject/Naos.Build/master/NAOS-NuGet-Icon-v2.png</iconUrl>
+    <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>The internal supporting resources for repository configuration.</description>
+    <tags>CI, Build</tags>
+    <developmentDependency>true</developmentDependency>
+	<dependencies>
+	</dependencies>
+  </metadata>
+  <files>
+    <file src="Default.gitignore" target="Default.gitignore" />
+    <file src="RepoConfig.ps1" target="RepoConfig.ps1" />
+    <file src="RepoConfigInstructions.ps1" target="RepoConfigInstructions.ps1" />
+  </files>
+</package>

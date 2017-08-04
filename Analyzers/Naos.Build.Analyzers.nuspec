@@ -1,0 +1,28 @@
+﻿<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>Naos.Build.Analyzers</id>
+    <version>$version$</version>
+	<authors>Naos Project</authors>
+    <copyright>Copyright (c) 2017 Naos LLC</copyright>
+    <projectUrl>http://naosproject.com</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/NaosProject/Naos.Build/master/NAOS-NuGet-Icon-v2.png</iconUrl>
+    <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>The internal analyzers to use.</description>
+    <tags>CI, Build</tags>
+    <developmentDependency>true</developmentDependency>
+	<dependencies>
+        <dependency id="StyleCop.Analyzers" version="1.0.2" />
+	</dependencies>
+  </metadata>
+  <files>
+    <file src="tools\install.ps1" target="tools\install.ps1" />
+    <file src="tools\uninstall.ps1" target="tools\uninstall.ps1" />
+    <file src="Naos.Build.Analyzers.targets" target="build" />
+    <file src="analyzers\stylecop.json" target="analyzers" />
+    <file src="analyzers\dictionary.xml" target="analyzers" />
+    <file src="analyzers\release.ruleset" target="analyzers" />
+    <file src="analyzers\test.ruleset" target="analyzers" />
+  </files>
+</package>

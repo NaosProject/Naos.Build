@@ -1,0 +1,24 @@
+﻿<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>Naos.Build.Conventions.ReSharper</id>
+    <version>$version$</version>
+	<authors>Naos Project</authors>
+    <copyright>Copyright (c) 2017 Naos LLC</copyright>
+    <projectUrl>http://naosproject.com</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/NaosProject/Naos.Build/master/NAOS-NuGet-Icon-v2.png</iconUrl>
+    <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>The internal ReSharper DotSettings to use.</description>
+    <tags>CI, Build</tags>
+    <developmentDependency>true</developmentDependency>
+	<dependencies>
+	</dependencies>
+  </metadata>
+  <files>
+    <file src="Naos.Build.Conventions.ReSharper.Install.ps1" target="tools\install.ps1" />
+    <file src="Naos.Build.Conventions.ReSharper.Uninstall.ps1" target="tools\uninstall.ps1" />
+    <file src="Release.DotSettings" target="Release.DotSettings" />
+    <file src="Test.DotSettings" target="Test.DotSettings" />
+  </files>
+</package>
