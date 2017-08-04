@@ -8,10 +8,14 @@
     <Rule Id="CA1034" Action="None" />
     <Rule Id="CA1062" Action="None" />
     <Rule Id="CA1303" Action="None" />
-    <Rule Id="CA2210" Action="None" />    
+    <Rule Id="CA1502" Action="None" />
+    <Rule Id="CA1506" Action="None" />
+    <Rule Id="CA1822" Action="None" />
+    <Rule Id="CA2210" Action="None" />
   </Rules>
   <Rules AnalyzerId="StyleCop.Analyzers" RuleNamespace="StyleCop.Analyzers">
     <Rule Id="SA1118" Action="None" />
+    <Rule Id="SA1124" Action="None" />
     <Rule Id="SA1131" Action="None" />
     <Rule Id="SA1201" Action="None" />
     <Rule Id="SA1202" Action="None" />
