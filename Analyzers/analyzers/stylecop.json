@@ -24,9 +24,10 @@
     "namingRules": {
       "allowCommonHungarianPrefixes": false,
       "allowedHungarianPrefixes": [
+		"as",
+		"co",
         "db",
 		"ip",
-		"co",
 		"to",
       ]
     }

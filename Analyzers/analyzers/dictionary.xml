@@ -17,22 +17,30 @@
       <Word>Bson</Word>
       <Word>bool</Word>
       <Word>Chocolatey</Word>
+      <Word>config</Word>
+      <Word>configs</Word>
       <Word>Coop</Word>
+      <Word>deployer</Word>
       <Word>Dist</Word>
       <Word>FY</Word>
       <Word>json</Word>
       <Word>Loggly</Word>
       <Word>Mfa</Word>
+      <Word>namer</Word>
       <Word>Naos</Word>
+      <Word>NuGet</Word>
       <Word>nullable</Word>
       <Word>OBeautifulCode</Word>
+      <Word>overriden</Word>
       <Word>pathed</Word>
       <Word>pem</Word>
       <Word>pdf</Word>
       <Word>pfx</Word>
       <Word>pluralization</Word>
       <Word>sku</Word>
+      <Word>skus</Word>
       <Word>targeter</Word>
+      <Word>targeters</Word>
       <Word>tearsheet</Word>
       <Word>tearsheets</Word>
       <Word>upsert</Word>
@@ -48,6 +56,8 @@
       <Term CompoundAlternate="Gb">gb</Term>
       <Term CompoundAlternate="Ip">ip</Term>
       <Term CompoundAlternate="Kb">kb</Term>
+      <Term CompoundAlternate="NuGet">nuget</Term>
+      <Term CompoundAlternate="nuget">nuget</Term>
       <Term CompoundAlternate="OBeautifulCode">obeautifulcode</Term>
       <Term CompoundAlternate="RollUp">rollup</Term>
       <Term CompoundAlternate="Sa">sa</Term>
