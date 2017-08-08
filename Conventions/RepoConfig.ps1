@@ -53,6 +53,14 @@ Write-Output "##################################################################
 Write-Output "------------------------------------------------------------------------------------------------"
 Write-Output "> Starting Script ($(Split-Path $scriptFilePath -Leaf)) at $($scriptStartTime.ToString())"
 
+Write-Output "------------------------------------------------------------------------------------------------"
+Write-Output " > Parameters"
+Write-Output " - RepositoryPath:       $RepositoryPath"
+Write-Output " - Update:               $Update"
+Write-Output " - ThrowOnPendingUpdate: $ThrowOnPendingUpdate"
+Write-Output " - PreRelease:           $PreRelease"
+Write-Output " < Parameters"
+
 $alreadyUpToDate = $false
 $repoConfigPackageVersion = '1.0.0.0'
 $instructionsFilePath = Join-Path $scriptRootPath 'RepoConfigInstructions.ps1'
@@ -157,11 +165,12 @@ if ($alreadyUpToDate) {
 }
 elseif ($Update) {
 	Write-Output "------------------------------------------------------------------------------------------------"
-	Write-Output " > Running specific update instructions from version $repoConfigPackageVersion"
+	Write-Output " > Running specific update instructions"
+	Write-Output " - Version: $repoConfigPackageVersion"
+	Write-Output " - Instruction Script: $instructionsFilePath"
 	Write-Output ''
 	&$instructionsFilePath -RepositoryPath $RepositoryPath
 	Write-Output ''
-	Write-Output " - Executed $instructionsFilePath"
 	Write-Output " < Running specific update instructions"
 
 	&$updateState
