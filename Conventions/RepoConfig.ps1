@@ -64,7 +64,7 @@ Write-Output " < Parameters"
 $alreadyUpToDate = $false
 $repoConfigPackageVersion = '1.0.0.0'
 $instructionsFilePath = Join-Path $scriptRootPath 'RepoConfigInstructions.ps1'
-$tempFilePath = Join-Path $scriptRootPath "WorkingDir-$($scriptStartTime.ToString('yyyyMMdd-HHmmss'))"
+$tempFilePath = Join-Path $scriptRootPath "Temp-$($scriptStartTime.ToString('MMdd-HHmm'))" # this can't be tool long due to PathTooLong problems...
 $nugetLog = Join-Path $tempFilePath 'NuGet.log'
 if (Test-Path $tempFilePath) {
 	throw "Test path '$tempFilePath' already exists, this is NOT expected."
