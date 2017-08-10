@@ -16,6 +16,6 @@
 	</dependencies>
   </metadata>  
   <files>
-    <file src="NaosNuSpecTemplate.template-nuspec" target="scripts" />
+    <file src="NaosNuSpecTemplate.template-nuspec" target="NaosNuSpecTemplate.template-nuspec" />
   </files>  
 </package>
