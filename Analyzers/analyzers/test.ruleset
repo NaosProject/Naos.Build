@@ -232,8 +232,7 @@
 
     <!--
       ** File may only contain a single type **
-      It's reasonable to relax this rule in test projects where we are more likely to create container types.
-      This helps with file bloat and readability/maintainability of tests.
+      This gets in the way of time when you want things like a base class and a null object implementation in the same file.
     -->
     <Rule Id="SA1402" Action="None" />
 

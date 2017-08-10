@@ -107,6 +107,12 @@
       We do not like hungarian notation.
     -->
     <Rule Id="SA1305" Action="Warning" />
+	
+    <!--
+      ** File may only contain a single type **
+      This gets in the way of time when you want things like a base class and a null object implementation in the same file.
+    -->
+    <Rule Id="SA1402" Action="None" />
 
     <!--
       ** Partial elements must be documented **
