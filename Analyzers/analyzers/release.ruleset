@@ -12,6 +12,15 @@
     <Rule Id="CA1006" Action="None" />
 
     <!--
+      ** Use properties where appropriate **
+      We disagree that methods that start with the term 'Get' and take no parameters are better implemented
+      as properties.  We tend to write classes that are POCOs and/or immutable or containers for static
+      methods and we shy away from stateful objects with layers of inheritance.  As such, when we use 'Get'
+      our methods are most often doing work.  In practice, this rule almost always produces false positives.  
+    -->
+    <Rule Id="CA1024" Action="None" />
+	
+    <!--
       ** Default parameters should not be used **
       Default parameters are too useful to disallow.  According to the documentation "...the CLS
       allows compilers to ignore the values that are assigned to these parameters," but we are not
