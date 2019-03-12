@@ -82,6 +82,12 @@ if (-not (Test-Path $stateFilePath)) {
 	Write-Output " - Created $stateFilePath"
 	Write-Output " < No state file found"
 }
+else
+{
+	Write-Output "------------------------------------------------------------------------------------------------"
+	Write-Output " - Target Repository Path: $RepositoryPath"
+	Write-Output " - State File Path: $stateFilePath"
+}
 
 $stateFilePath = Resolve-Path $stateFilePath
 [xml] $stateFileXml = Get-Content $stateFilePath
