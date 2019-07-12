@@ -4,7 +4,13 @@
   <Rules AnalyzerId="Microsoft.Analyzers.ManagedCodeAnalysis" RuleNamespace="Microsoft.Rules.Managed">
     <Rule Id="CA1006" Action="None" />
     <Rule Id="CA1020" Action="None" />
-    
+    <Rule Id="CA1026" Action="None" />
+    <Rule Id="CA1034" Action="None" />
+    <Rule Id="CA1062" Action="None" />
+    <Rule Id="CA1303" Action="None" />
+    <Rule Id="CA2210" Action="None" />    
+  </Rules>
+  <Rules AnalyzerId="StyleCop.Analyzers" RuleNamespace="StyleCop.Analyzers">
     <!--
       ** Code should not contain multiple whitespace characters in a row. **
       This becomes a problem with alignment of variables like below,
@@ -28,13 +34,6 @@
     -->
     <Rule Id="SA1025" Action="None" />
 
-    <Rule Id="CA1026" Action="None" />
-    <Rule Id="CA1034" Action="None" />
-    <Rule Id="CA1062" Action="None" />
-    <Rule Id="CA1303" Action="None" />
-    <Rule Id="CA2210" Action="None" />    
-  </Rules>
-  <Rules AnalyzerId="StyleCop.Analyzers" RuleNamespace="StyleCop.Analyzers">
     <Rule Id="SA1118" Action="None" />
     <Rule Id="SA1131" Action="None" />
     <Rule Id="SA1201" Action="None" />

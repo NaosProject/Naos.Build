@@ -4,6 +4,19 @@
   <Rules AnalyzerId="Microsoft.Analyzers.ManagedCodeAnalysis" RuleNamespace="Microsoft.Rules.Managed">
     <Rule Id="CA1006" Action="None" />
     <Rule Id="CA1024" Action="None" />
+    <Rule Id="CA1030" Action="None" />
+    <Rule Id="CA1303" Action="None" />
+    <Rule Id="CA1502" Action="None" />
+    <Rule Id="CA1506" Action="None" />
+    <Rule Id="CA1707" Action="None" />
+    <Rule Id="CA1709" Action="None" />
+    <Rule Id="CA1806" Action="None" />
+    <Rule Id="CA2000" Action="None" />
+    <Rule Id="CA2202" Action="None" />
+    <Rule Id="CA2210" Action="None" />
+  </Rules>
+  <Rules AnalyzerId="StyleCop.Analyzers" RuleNamespace="StyleCop.Analyzers">
+    <Rule Id="SA0001" Action="None" />
     
     <!--
       ** Code should not contain multiple whitespace characters in a row. **
@@ -28,19 +41,6 @@
     -->
     <Rule Id="SA1025" Action="None" />
 
-    <Rule Id="CA1030" Action="None" />
-    <Rule Id="CA1303" Action="None" />
-    <Rule Id="CA1502" Action="None" />
-    <Rule Id="CA1506" Action="None" />
-    <Rule Id="CA1707" Action="None" />
-    <Rule Id="CA1709" Action="None" />
-    <Rule Id="CA1806" Action="None" />
-    <Rule Id="CA2000" Action="None" />
-    <Rule Id="CA2202" Action="None" />
-    <Rule Id="CA2210" Action="None" />
-  </Rules>
-  <Rules AnalyzerId="StyleCop.Analyzers" RuleNamespace="StyleCop.Analyzers">
-    <Rule Id="SA0001" Action="None" />
     <Rule Id="SA1005" Action="None" />
     <Rule Id="SA1028" Action="None" />
     <Rule Id="SA1118" Action="None" />
