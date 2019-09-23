@@ -9,6 +9,10 @@ $releaseRulesetBasePath = Join-Path $analyzersFilesBasePath "release.ruleset"
 $testRulesetBasePath = Join-Path $analyzersFilesBasePath "test.ruleset"
 $justificationsBasePath = Join-Path $analyzersFilesBasePath "Justifications.cs"
 $justificationsBaseDirectoryCustom = Join-Path $([System.IO.Path]::GetTempPath()) $project.Name
+if (-not (Test-Path $justificationsBaseDirectoryCustom)) {
+	md $justificationsBaseDirectoryCustom | Out-Null
+}
+
 $justificationsBasePathCustom = Join-Path $justificationsBaseDirectoryCustom "Justifications.cs"
 
 $justificationsFileContents = Get-Content $justificationsBasePath
@@ -22,7 +26,9 @@ $folder.ProjectItems.AddFromFileCopy($styleCopDotJsonBasePath) | Out-Null
 $folder.ProjectItems.AddFromFileCopy($caDictionaryBasePath) | Out-Null
 $folder.ProjectItems.AddFromFileCopy($justificationsBasePathCustom) | Out-Null
 
-Remove-Item $justificationsBaseDirectoryCustom -Force -Recurse
+if (Test-Path $justificationsBaseDirectoryCustom) {
+    Remove-Item $justificationsBaseDirectoryCustom -Force -Recurse
+}
 
 # Fix up stylecop.json file (voodoo magic courtesy of StingyJack - https://github.com/dotnet/roslyn/issues/4655)
 $item = $folder.ProjectItems.Item("$(Split-Path $styleCopDotJsonBasePath -Leaf)")
