@@ -8,7 +8,7 @@ $caDictionaryBasePath = Join-Path $analyzersFilesBasePath "dictionary.xml"
 $releaseRulesetBasePath = Join-Path $analyzersFilesBasePath "release.ruleset"
 $testRulesetBasePath = Join-Path $analyzersFilesBasePath "test.ruleset"
 $justificationsBasePath = Join-Path $analyzersFilesBasePath "Justifications.cs"
-$justificationsBasePathCustom = Join-Path (Join-Path [System.IO.Path]::GetTempPath() $project.Name) "Justifications.cs"
+$justificationsBasePathCustom = Join-Path (Join-Path $([System.IO.Path]::GetTempPath()) $project.Name) "Justifications.cs"
 
 $justificationsFileContents = Get-Content $justificationsBasePath
 $justificationsFileContents = $justificationsFileContents.Replace('NAMESPACETOKEN', $project.Name)
