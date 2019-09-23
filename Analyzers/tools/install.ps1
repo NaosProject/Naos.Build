@@ -8,17 +8,19 @@ $caDictionaryBasePath = Join-Path $analyzersFilesBasePath "dictionary.xml"
 $releaseRulesetBasePath = Join-Path $analyzersFilesBasePath "release.ruleset"
 $testRulesetBasePath = Join-Path $analyzersFilesBasePath "test.ruleset"
 $justificationsBasePath = Join-Path $analyzersFilesBasePath "Justifications.cs"
+$justificationsBasePathCustom = Join-Path $analyzersFilesBasePath $project.Name
+$justificationsBasePathCustom = Join-Path $justificationsBasePathCustom "Justifications.cs"
 
 $justificationsFileContents = Get-Content $justificationsBasePath
 $justificationsFileContents = $justificationsFileContents.Replace('NAMESPACETOKEN', $project.Name)
-$justificationsFileContents | Out-File -FilePath $justificationsBasePath
+$justificationsFileContents | Out-File -FilePath $justificationsBasePathCustom
 
 $project.ProjectItems.AddFolder(".analyzers") | Out-Null
 $folder = $project.ProjectItems.Item(".analyzers")
 
 $folder.ProjectItems.AddFromFileCopy($styleCopDotJsonBasePath) | Out-Null
 $folder.ProjectItems.AddFromFileCopy($caDictionaryBasePath) | Out-Null
-$folder.ProjectItems.AddFromFileCopy($justificationsBasePath) | Out-Null
+$folder.ProjectItems.AddFromFileCopy($justificationsBasePathCustom) | Out-Null
 
 # Fix up stylecop.json file (voodoo magic courtesy of StingyJack - https://github.com/dotnet/roslyn/issues/4655)
 $item = $folder.ProjectItems.Item("$(Split-Path $styleCopDotJsonBasePath -Leaf)")
