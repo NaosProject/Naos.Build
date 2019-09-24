@@ -7,13 +7,14 @@ $styleCopDotJsonBasePath = Join-Path $analyzersFilesBasePath "stylecop.json"
 $caDictionaryBasePath = Join-Path $analyzersFilesBasePath "dictionary.xml"
 $releaseRulesetBasePath = Join-Path $analyzersFilesBasePath "release.ruleset"
 $testRulesetBasePath = Join-Path $analyzersFilesBasePath "test.ruleset"
-$justificationsBasePath = Join-Path $analyzersFilesBasePath "Justifications.cs"
+$justificationsFileName = "SuppressBecause.cs"
+$justificationsBasePath = Join-Path $analyzersFilesBasePath $justificationsFileName
 $justificationsBaseDirectoryCustom = Join-Path $([System.IO.Path]::GetTempPath()) $project.Name
 if (-not (Test-Path $justificationsBaseDirectoryCustom)) {
 	md $justificationsBaseDirectoryCustom | Out-Null
 }
 
-$justificationsBasePathCustom = Join-Path $justificationsBaseDirectoryCustom "Justifications.cs"
+$justificationsBasePathCustom = Join-Path $justificationsBaseDirectoryCustom $justificationsFileName
 
 $justificationsFileContents = Get-Content $justificationsBasePath
 $justificationsFileContents = $justificationsFileContents.Replace('NAMESPACETOKEN', $project.Name)
