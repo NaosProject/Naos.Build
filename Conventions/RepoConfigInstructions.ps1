@@ -55,6 +55,11 @@ if ($existingFilePresent)
     # $writer = [System.Xml.XmlWriter]::Create($slnDotSettingsTargetFilePath, $settings);
     # $newContentsXml.Save($writer);
     $newContentsXml.Save($slnDotSettingsTargetFilePath)
+    $newContentsXmlSavedRaw = Get-Content $slnDotSettingsTargetFilePath
+    $newContentsXmlSavedTreated = $newContentsXmlSavedRaw.Replace('><', ">`n<")
+    $newContentsXmlSavedTreated = $newContentsXmlSavedTreated.Replace("`n<s", "`n	<s")
+    $newContentsXmlSavedTreated = $newContentsXmlSavedTreated.Replace("<!-- Pres", "`n	<!-- Pres")
+    $newContentsXmlSavedTreated | Out-File $slnDotSettingsTargetFilePath -Force
     
     Write-Output "    - Found Existing File (merged source into target)"
     Write-Output "    - Source: $slnDotSettingsSourceFilePath"
