@@ -55,6 +55,8 @@ if ($existingFilePresent)
     # $writer = [System.Xml.XmlWriter]::Create($slnDotSettingsTargetFilePath, $settings);
     # $newContentsXml.Save($writer);
     $newContentsXml.Save($slnDotSettingsTargetFilePath)
+    
+    # Cannot figure out how to do this correctly so hacking for newline's and spacing after appending the imported nodes for preservation...
     $newContentsXmlSavedRaw = Get-Content $slnDotSettingsTargetFilePath
     $newContentsXmlSavedTreated = $newContentsXmlSavedRaw.Replace('><', ">`n<")
     $newContentsXmlSavedTreated = $newContentsXmlSavedTreated.Replace("`n<s", "`n	<s")
