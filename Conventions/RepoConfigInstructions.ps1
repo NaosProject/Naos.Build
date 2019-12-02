@@ -18,13 +18,7 @@ Write-Output ""
 Write-Output ""
 
 $slnFileName = (ls $RepositoryPath -Filter *.sln).FullName
-$sourceFile = 'Release'
-if ($slnFileName.EndsWith('.Test') -or $slnFileName.EndsWith('.Tests'))
-{
-    $sourceFile = 'Test'
-}
-
-$slnDotSettingsSourceFilePath = Join-Path $scriptRootPath "$sourceFile.DotSettings"
+$slnDotSettingsSourceFilePath = Join-Path $scriptRootPath 'Solution.DotSettings'
 $slnDotSettingsTargetFilePath = $slnFileName + '.DotSettings'
 
 Write-Output "    > Updating Solution DotSettings"

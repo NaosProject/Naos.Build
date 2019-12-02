@@ -19,5 +19,6 @@
     <file src="Default.gitignore" target="Default.gitignore" />
     <file src="RepoConfig.ps1" target="RepoConfig.ps1" />
     <file src="RepoConfigInstructions.ps1" target="RepoConfigInstructions.ps1" />
+    <file src="Solution.DotSettings" target="Solution.DotSettings" />
   </files>
 </package>
