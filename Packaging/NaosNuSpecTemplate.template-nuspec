@@ -2,7 +2,7 @@
 <package>
   <metadata>
     <authors>Naos Project</authors>
-    <copyright>Copyright (c) 2016 Naos LLC</copyright>
+    <copyright>Copyright (c) Naos Project 2020. All rights reserved.</copyright>
     <projectUrl>http://naosproject.com</projectUrl>
     <iconUrl>https://raw.githubusercontent.com/NaosProject/Naos.Build/master/NAOS-NuGet-Icon-v2.png</iconUrl>
     <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
