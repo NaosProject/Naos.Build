@@ -7,8 +7,8 @@
     <ProjectGuid>$guid1$</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>$projectName$</RootNamespace>
-    <AssemblyName>$projectName$</AssemblyName>
+    <RootNamespace>[PROJECT_NAME]</RootNamespace>
+    <AssemblyName>[PROJECT_NAME]</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -22,7 +22,7 @@
     </DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>bin\Debug\$projectName$.xml</DocumentationFile>
+    <DocumentationFile>bin\Debug\[PROJECT_NAME].xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -32,14 +32,14 @@
     </DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>bin\Release\$projectName$.xml</DocumentationFile>
+    <DocumentationFile>bin\Release\[PROJECT_NAME].xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System"/>
     <Reference Include="Microsoft.CSharp"/>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="$secondPrefixElement$JsonConfiguration.cs" />
+    <Compile Include="[SOLUTION_NAME_WITHOUT_ORGANIZATION_PREFIX]JsonConfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

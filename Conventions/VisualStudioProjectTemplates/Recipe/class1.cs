@@ -4,7 +4,7 @@
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace $safeprojectname$
+namespace [PROJECT_NAME]
 {
     /// <summary>
     /// TODO: Starting point for new project.

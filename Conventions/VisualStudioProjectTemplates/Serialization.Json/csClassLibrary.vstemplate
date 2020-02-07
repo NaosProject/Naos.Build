@@ -17,7 +17,7 @@
   <TemplateContent>
     <Project File="ClassLibrary.csproj" ReplaceParameters="true">
       <ProjectItem ReplaceParameters="true" TargetFileName="Properties\AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
-      <ProjectItem ReplaceParameters="true" OpenInEditor="true">$secondPrefixElement$JsonConfiguration.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" OpenInEditor="true">[SOLUTION_NAME_WITHOUT_ORGANIZATION_PREFIX]JsonConfiguration.cs</ProjectItem>
     </Project>
   </TemplateContent>
 </VSTemplate>

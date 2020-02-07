@@ -4,7 +4,7 @@ $if$ ($targetframeworkversion$ >= 3.5)using System.Linq;
 $endif$using System.Text;
 $if$ ($targetframeworkversion$ >= 4.5)using System.Threading.Tasks;
 $endif$
-namespace $safeprojectname$
+namespace [PROJECT_NAME]
 {
     class Program
     {

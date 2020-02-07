@@ -11,11 +11,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("$projectName$")]
+[assembly: AssemblyTitle("[PROJECT_NAME]")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Naos Project")]
-[assembly: AssemblyProduct("$projectName$")]
+[assembly: AssemblyProduct("[PROJECT_NAME]")]
 [assembly: AssemblyCopyright("Copyright © Naos Project $year$")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
