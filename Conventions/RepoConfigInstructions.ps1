@@ -42,12 +42,12 @@ if ($existingFilePresent)
     }
     
     $separatorComment = $newContentsXml.CreateComment(" Preserved customizations are after this comment (do not edit above as it will make diffs more difficult. ")
-    $newContentsXml.DocumentElement.AppendChild($separatorComment)
+    [void]$newContentsXml.DocumentElement.AppendChild($separatorComment)
     
     $nodesForPreservation = $nodesToEvaluateForPreservation | ?{($_ -ne $null) -and (-not $nodesThatDoNotNeedToBePreserved.Contains($_))}
     $nodesForPreservation | %{
         $newNode = $newContentsXml.ImportNode($_, $true)
-        $newContentsXml.DocumentElement.AppendChild($newNode)
+        [void]$newContentsXml.DocumentElement.AppendChild($newNode)
     }
     
     # $settings = New-Object System.Xml.XmlWriterSettings
