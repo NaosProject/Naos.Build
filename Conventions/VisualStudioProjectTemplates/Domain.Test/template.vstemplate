@@ -1,23 +1,29 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <VSTemplate Version="3.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
   <TemplateData>
-    <Name Package="{FAE04EC1-301F-11d3-BF4B-00C04F79EFBC}" ID="2322" />
-    <Description Package="{FAE04EC1-301F-11d3-BF4B-00C04F79EFBC}" ID="2323" />
-    <Icon Package="{FAE04EC1-301F-11d3-BF4B-00C04F79EFBC}" ID="4547" />
-    <TemplateID>Microsoft.CSharp.ClassLibrary</TemplateID>
+    <Name Package="{FAE04EC1-301F-11d3-BF4B-00C04F79EFBC}" ID="2320" />
+    <Description Package="{FAE04EC1-301F-11d3-BF4B-00C04F79EFBC}" ID="2321" />
+    <Icon Package="{FAE04EC1-301F-11d3-BF4B-00C04F79EFBC}" ID="4548" />
+    <TemplateID>Microsoft.CSharp.ConsoleApplication</TemplateID>
     <ProjectType>CSharp</ProjectType>
     <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
     <SortOrder>15</SortOrder>
     <NumberOfParentCategoriesToRollUp>2</NumberOfParentCategoriesToRollUp>
     <CreateNewFolder>true</CreateNewFolder>
-    <DefaultName>ClassLibrary</DefaultName>
+    <DefaultName>ConsoleApp</DefaultName>
     <ProvideDefaultName>true</ProvideDefaultName>
-    <CreateInPlace>true</CreateInPlace>
+    <CreateInPlace>false</CreateInPlace>
   </TemplateData>
   <TemplateContent>
-    <Project File="ClassLibrary.csproj" ReplaceParameters="true">
+    <Project File="ConsoleApplication.csproj" ReplaceParameters="true">
       <ProjectItem ReplaceParameters="true" TargetFileName="Properties\AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
-      <ProjectItem ReplaceParameters="true" OpenInEditor="true">Class1.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" OpenInEditor="true">Class1Test.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" OpenInEditor="true">GlobalSuppressions.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" OpenInEditor="true">[SUBSYSTEM_NAME]DummyFactory.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" OpenInEditor="true">[SUBSYSTEM_NAME]DummyFactory.designer.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" OpenInEditor="true">[SUBSYSTEM_NAME]DummyFactoryTest.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" OpenInEditor="true">DummyFactory.recipe-nuspec</ProjectItem>
+      <ProjectItem ReplaceParameters="true" OpenInEditor="true">SerializationConfigurationTypes.cs</ProjectItem>
     </Project>
   </TemplateContent>
 </VSTemplate>

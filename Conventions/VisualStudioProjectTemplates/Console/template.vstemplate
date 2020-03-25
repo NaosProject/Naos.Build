@@ -17,8 +17,9 @@
   <TemplateContent>
     <Project File="ConsoleApplication.csproj" ReplaceParameters="true">
       <ProjectItem ReplaceParameters="true" TargetFileName="Properties\AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
-      <ProjectItem ReplaceParameters="true" OpenInEditor="true">Program.cs</ProjectItem>
-      <ProjectItem ReplaceParameters="true">App.config</ProjectItem>
+      <ProjectItem ReplaceParameters="true" OpenInEditor="true">[PROJECT_NAME].override-nuspec</ProjectItem>
+      <ProjectItem ReplaceParameters="true" OpenInEditor="true">GlobalSuppressions.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" OpenInEditor="true">ConsoleAbstraction.cs</ProjectItem>
     </Project>
   </TemplateContent>
 </VSTemplate>

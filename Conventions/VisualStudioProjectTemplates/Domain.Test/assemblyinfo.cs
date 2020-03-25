@@ -12,7 +12,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("[PROJECT_NAME]")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("[PROJECT_NAME]")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Naos Project")]
 [assembly: AssemblyProduct("[PROJECT_NAME]")]
@@ -40,3 +40,4 @@ using System.Runtime.InteropServices;
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: CLSCompliant(true)]

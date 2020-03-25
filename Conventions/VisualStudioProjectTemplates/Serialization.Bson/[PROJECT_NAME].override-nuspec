@@ -1,0 +1,7 @@
+﻿<?xml version="1.0"?>
+<package>
+  <metadata>
+    <description>BSON Serialization Configuration for types in [ORGANIZATION].[SUBSYSTEM_NAME]</description>
+    <tags>bson serialization configuration [SUBSYSTEM_NAME]</tags>
+  </metadata>
+</package>

@@ -17,9 +17,8 @@
   <TemplateContent>
     <Project File="ClassLibrary.csproj" ReplaceParameters="true">
       <ProjectItem ReplaceParameters="true" TargetFileName="Properties\AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
-      <ProjectItem ReplaceParameters="true" OpenInEditor="true">Class1.cs</ProjectItem>
-      <ProjectItem ReplaceParameters="true" OpenInEditor="true">[PROJECT_NAME].override-nuspec</ProjectItem>
-      <ProjectItem ReplaceParameters="true" OpenInEditor="true">GlobalSuppressions.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" OpenInEditor="true">NugetPackageBlacklist.txt</ProjectItem>
+      <ProjectItem ReplaceParameters="true" OpenInEditor="true">[PROJECT_NAME].recipe-nuspec</ProjectItem>
     </Project>
   </TemplateContent>
 </VSTemplate>

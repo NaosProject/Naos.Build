@@ -9,7 +9,7 @@ namespace [PROJECT_NAME]
     /// <summary>
     /// TODO: Starting point for new project.
     /// </summary>
-    public class Class1
+    public partial class Class1
     {
     }
 }

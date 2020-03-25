@@ -1,0 +1,17 @@
+﻿<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>[PROJECT_NAME]</id>
+    <description>Bootstrapper for the '[PUT_KIND_HERE]' project kind.</description>
+    <tags>Bootstrapper</tags>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="PLACEHOLDER.THAT.WILL.BE.REPLACED" targetFramework="net462" />
+    </frameworkAssemblies>
+    <dependencies>
+      <dependency id="PLACEHOLDER.THAT.WILL.BE.REPLACED" version="1.0.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="NugetPackageBlacklist.txt" target="NugetPackageBlacklist.txt" />
+  </files>
+</package>

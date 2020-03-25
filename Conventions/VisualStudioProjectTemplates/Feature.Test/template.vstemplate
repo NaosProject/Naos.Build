@@ -7,7 +7,7 @@
     <TemplateID>Microsoft.CSharp.ConsoleApplication</TemplateID>
     <ProjectType>CSharp</ProjectType>
     <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
-    <SortOrder>13</SortOrder>
+    <SortOrder>15</SortOrder>
     <NumberOfParentCategoriesToRollUp>2</NumberOfParentCategoriesToRollUp>
     <CreateNewFolder>true</CreateNewFolder>
     <DefaultName>ConsoleApp</DefaultName>
@@ -17,6 +17,8 @@
   <TemplateContent>
     <Project File="ConsoleApplication.csproj" ReplaceParameters="true">
       <ProjectItem ReplaceParameters="true" TargetFileName="Properties\AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" OpenInEditor="true">Class1Test.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" OpenInEditor="true">GlobalSuppressions.cs</ProjectItem>
     </Project>
   </TemplateContent>
 </VSTemplate>

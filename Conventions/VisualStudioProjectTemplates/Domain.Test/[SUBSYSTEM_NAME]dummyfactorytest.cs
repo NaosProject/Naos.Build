@@ -1,15 +1,21 @@
 ﻿// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="Class1.cs" company="Naos Project">
+// <copyright file="[SUBSYSTEM_NAME]DummyFactoryTest.cs" company="Naos Project">
 //    Copyright (c) Naos Project 2019. All rights reserved.
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
 
 namespace [PROJECT_NAME]
 {
-    /// <summary>
-    /// TODO: Starting point for new project.
-    /// </summary>
-    public class Class1
+    using System;
+
+    using FakeItEasy;
+
+    using OBeautifulCode.AutoFakeItEasy;
+
+    using Xunit;
+
+    public static partial class [SUBSYSTEM_NAME]DummyFactoryTest
     {
+        /* Add your Dummy Factory tests, if any, here. */
     }
 }

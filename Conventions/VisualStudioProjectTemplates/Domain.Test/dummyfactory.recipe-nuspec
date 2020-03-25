@@ -1,0 +1,17 @@
+﻿<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>[SOLUTION_NAME].Recipes.DummyFactory</id>
+    <description>A Dummy Factory for types in [PROJECT_NAME_WITHOUT_TEST_SUFFIX]</description>
+    <tags>dummyfactory dummy factory fakeiteasy autofixture snippet codeinclude utility shared recipe [SUBSYSTEM_NAME]</tags>
+    <dependencies>
+        <dependency id="[PROJECT_NAME_WITHOUT_TEST_SUFFIX]" version="$version$" />
+        <dependency id="OBeautifulCode.AutoFakeItEasy" version ="1.0.126" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src=".analyzers\SuppressBecause.cs" target="content\net462\.recipes\[SOLUTION_NAME]\SuppressBecause.cs" />
+    <file src="[SUBSYSTEM_NAME]DummyFactory.cs" target="content\net462\.recipes\[SOLUTION_NAME]\[SUBSYSTEM_NAME]DummyFactory.cs" />
+    <file src="[SUBSYSTEM_NAME]DummyFactory.designer.cs" target="content\net462\.recipes\[SOLUTION_NAME]\[SUBSYSTEM_NAME]DummyFactory.designer.cs" />
+  </files>
+</package>
