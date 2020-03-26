@@ -22,7 +22,7 @@
       <ProjectItem ReplaceParameters="true" OpenInEditor="true">[SUBSYSTEM_NAME]DummyFactory.cs</ProjectItem>
       <ProjectItem ReplaceParameters="true" OpenInEditor="true">[SUBSYSTEM_NAME]DummyFactory.designer.cs</ProjectItem>
       <ProjectItem ReplaceParameters="true" OpenInEditor="true">[SUBSYSTEM_NAME]DummyFactoryTest.cs</ProjectItem>
-      <ProjectItem ReplaceParameters="true" OpenInEditor="true">DummyFactory.recipe-nuspec</ProjectItem>
+      <ProjectItem ReplaceParameters="true" OpenInEditor="true">[SUBSYSTEM_NAME]DummyFactory.recipe-nuspec</ProjectItem>
       <ProjectItem ReplaceParameters="true" OpenInEditor="true">SerializationConfigurationTypes.cs</ProjectItem>
     </Project>
   </TemplateContent>
