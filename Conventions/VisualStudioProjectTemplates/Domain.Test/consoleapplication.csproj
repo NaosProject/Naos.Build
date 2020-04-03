@@ -43,12 +43,12 @@
     <Compile Include="Class1Test.cs" />
     <Compile Include="SerializationConfigurationTypes.cs" />
     <Compile Include="GlobalSuppressions.cs" />
-    <Compile Include="[SUBSYSTEM_NAME]DummyFactory.cs" />
-    <Compile Include="[SUBSYSTEM_NAME]DummyFactory.designer.cs">
-      <DependentUpon>[SUBSYSTEM_NAME]DummyFactory.cs</DependentUpon>
+    <Compile Include="[PROJECT_NAME_CLASSNAME_PREFIX]DummyFactory.cs" />
+    <Compile Include="[PROJECT_NAME_CLASSNAME_PREFIX]DummyFactory.designer.cs">
+      <DependentUpon>[PROJECT_NAME_CLASSNAME_PREFIX]DummyFactory.cs</DependentUpon>
     </Compile>
-    <Compile Include="[SUBSYSTEM_NAME]DummyFactoryTest.cs" />
-    <None Include="[SUBSYSTEM_NAME]DummyFactory.recipe-nuspec" />
+    <Compile Include="[PROJECT_NAME_CLASSNAME_PREFIX]DummyFactoryTest.cs" />
+    <None Include="DummyFactory.recipe-nuspec" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
  </Project>

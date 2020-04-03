@@ -1,5 +1,5 @@
 ﻿// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="[SUBSYSTEM_NAME]DummyFactoryTest.cs" company="Naos Project">
+// <copyright file="[PROJECT_NAME_CLASSNAME_PREFIX]DummyFactoryTest.cs" company="Naos Project">
 //    Copyright (c) Naos Project 2019. All rights reserved.
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
@@ -14,7 +14,7 @@ namespace [PROJECT_NAME]
 
     using Xunit;
 
-    public static partial class [SUBSYSTEM_NAME]DummyFactoryTest
+    public static partial class [PROJECT_NAME_CLASSNAME_PREFIX]DummyFactoryTest
     {
         /* Add your Dummy Factory tests, if any, here. */
     }

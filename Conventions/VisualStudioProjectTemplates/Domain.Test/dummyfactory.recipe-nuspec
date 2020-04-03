@@ -11,7 +11,7 @@
   </metadata>
   <files>
     <file src=".analyzers\SuppressBecause.cs" target="content\net462\.recipes\[SOLUTION_NAME]\SuppressBecause.cs" />
-    <file src="[SUBSYSTEM_NAME]DummyFactory.cs" target="content\net462\.recipes\[SOLUTION_NAME]\[SUBSYSTEM_NAME]DummyFactory.cs" />
-    <file src="[SUBSYSTEM_NAME]DummyFactory.designer.cs" target="content\net462\.recipes\[SOLUTION_NAME]\[SUBSYSTEM_NAME]DummyFactory.designer.cs" />
+    <file src="[PROJECT_NAME_CLASSNAME_PREFIX]DummyFactory.cs" target="content\net462\.recipes\[SOLUTION_NAME]\[PROJECT_NAME_CLASSNAME_PREFIX]DummyFactory.cs" />
+    <file src="[PROJECT_NAME_CLASSNAME_PREFIX]DummyFactory.designer.cs" target="content\net462\.recipes\[SOLUTION_NAME]\[PROJECT_NAME_CLASSNAME_PREFIX]DummyFactory.designer.cs" />
   </files>
 </package>

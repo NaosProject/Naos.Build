@@ -19,10 +19,10 @@
       <ProjectItem ReplaceParameters="true" TargetFileName="Properties\AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
       <ProjectItem ReplaceParameters="true" OpenInEditor="true">Class1Test.cs</ProjectItem>
       <ProjectItem ReplaceParameters="true" OpenInEditor="true">GlobalSuppressions.cs</ProjectItem>
-      <ProjectItem ReplaceParameters="true" OpenInEditor="true">[SUBSYSTEM_NAME]DummyFactory.cs</ProjectItem>
-      <ProjectItem ReplaceParameters="true" OpenInEditor="true">[SUBSYSTEM_NAME]DummyFactory.designer.cs</ProjectItem>
-      <ProjectItem ReplaceParameters="true" OpenInEditor="true">[SUBSYSTEM_NAME]DummyFactoryTest.cs</ProjectItem>
-      <ProjectItem ReplaceParameters="true" OpenInEditor="true">[SUBSYSTEM_NAME]DummyFactory.recipe-nuspec</ProjectItem>
+      <ProjectItem ReplaceParameters="true" OpenInEditor="true">[PROJECT_NAME_CLASSNAME_PREFIX]DummyFactory.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" OpenInEditor="true">[PROJECT_NAME_CLASSNAME_PREFIX]DummyFactory.designer.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" OpenInEditor="true">[PROJECT_NAME_CLASSNAME_PREFIX]DummyFactoryTest.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" OpenInEditor="true">DummyFactory.recipe-nuspec</ProjectItem>
       <ProjectItem ReplaceParameters="true" OpenInEditor="true">SerializationConfigurationTypes.cs</ProjectItem>
     </Project>
   </TemplateContent>

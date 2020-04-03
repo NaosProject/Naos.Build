@@ -42,7 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="[SUBSYSTEM_NAME]JsonSerializationConfiguration.cs" />
+    <Compile Include="[PROJECT_NAME_CLASSNAME_PREFIX]JsonSerializationConfiguration.cs" />
     <Compile Include="GlobalSuppressions.cs" />
     <None Include="[PROJECT_NAME].override-nuspec" />
   </ItemGroup>

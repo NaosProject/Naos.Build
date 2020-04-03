@@ -17,7 +17,7 @@
   <TemplateContent>
     <Project File="ClassLibrary.csproj" ReplaceParameters="true">
       <ProjectItem ReplaceParameters="true" TargetFileName="Properties\AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
-      <ProjectItem ReplaceParameters="true" OpenInEditor="true">[SUBSYSTEM_NAME]JsonSerializationConfiguration.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" OpenInEditor="true">[PROJECT_NAME_CLASSNAME_PREFIX]JsonSerializationConfiguration.cs</ProjectItem>
       <ProjectItem ReplaceParameters="true" OpenInEditor="true">[PROJECT_NAME].override-nuspec</ProjectItem>
       <ProjectItem ReplaceParameters="true" OpenInEditor="true">GlobalSuppressions.cs</ProjectItem>
     </Project>
