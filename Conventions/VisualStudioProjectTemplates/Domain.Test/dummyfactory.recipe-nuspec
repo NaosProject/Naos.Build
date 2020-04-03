@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0"?>
 <package >
   <metadata>
-    <id>[SOLUTION_NAME].Recipes.DummyFactory</id>
+    <id>[PROJECT_NAME_WITHOUT_DOMAIN_OR_TEST_SUFFIX].Recipes.DummyFactory</id>
     <description>A Dummy Factory for types in [PROJECT_NAME_WITHOUT_TEST_SUFFIX]</description>
     <tags>dummyfactory dummy factory fakeiteasy autofixture snippet codeinclude utility shared recipe [SUBSYSTEM_NAME]</tags>
     <dependencies>
