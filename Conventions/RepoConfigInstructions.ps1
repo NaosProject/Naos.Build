@@ -44,7 +44,20 @@ if ($existingFilePresent)
     $separatorComment = $newContentsXml.CreateComment(" Preserved customizations are after this comment (do not edit above as it will make diffs more difficult. ")
     [void]$newContentsXml.DocumentElement.AppendChild($separatorComment)
     
-    $nodesForPreservation = $nodesToEvaluateForPreservation | ?{($_ -ne $null) -and (-not $nodesThatDoNotNeedToBePreserved.Contains($_))}
+    $nodesForPreservation = $nodesToEvaluateForPreservation | ?{$_ -ne $null} | ?{
+        $nodeToEvaluate = $_
+        $includeNode = $true
+        $nodesThatDoNotNeedToBePreserved | %{
+            $nodeToEvaluateAgainst = $_
+            if ($includeNode -and ($nodeToEvaluateAgainst -ne $null))
+            {
+                $includeNode = ($nodeToEvaluate.Key -ne $nodeToEvaluateAgainst.Key)
+            }
+        }
+        
+        return $includeNode
+    }
+    
     $nodesForPreservation | %{
         $newNode = $newContentsXml.ImportNode($_, $true)
         [void]$newContentsXml.DocumentElement.AppendChild($newNode)
