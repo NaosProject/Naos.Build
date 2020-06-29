@@ -12,6 +12,7 @@ namespace [PROJECT_NAME]
     using CLAP;
 
     using Naos.Bootstrapper;
+    using Naos.Build.Analyzers;
 
     /// <inheritdoc />
     public class ConsoleAbstraction : ConsoleAbstractionBase
@@ -22,7 +23,7 @@ namespace [PROJECT_NAME]
         /// <param name="debug">Optional value indicating whether to launch the debugger from inside the application (default is false).</param>
         /// <param name="requiredParameter">A required parameter to the operation.</param>
         [Verb(Aliases = "do", IsDefault = false, Description = "Does some work.")]
-        [SuppressMessage("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Justification = ObcSuppressBecause.CA1811_AvoidUncalledPrivateCode_MethodIsWiredIntoClapAsVerb)]
+        [SuppressMessage("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Justification = NaosSuppressBecause.CA1811_AvoidUncalledPrivateCode_MethodIsWiredIntoClapAsVerb)]
         public static void DoSomeWork(
             [Aliases("")] [Description("Launches the debugger.")] [DefaultValue(false)] bool debug,
             [Aliases("")] [Required] [Description("A required parameter to the operation.")] string requiredParameter)
