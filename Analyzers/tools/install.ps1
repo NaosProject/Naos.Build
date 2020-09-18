@@ -18,7 +18,7 @@ $justificationsBasePathCustom = Join-Path $justificationsBaseDirectoryCustom $ju
 
 $justificationsFileContents = Get-Content $justificationsBasePath
 $justificationsFileContents = $justificationsFileContents.Replace('NAMESPACETOKEN', $project.Name)
-$justificationsFileContents | Out-File -FilePath $justificationsBasePathCustom -Force
+$justificationsFileContents | Out-File -Encoding UTF8 -FilePath $justificationsBasePathCustom -Force
 
 $project.ProjectItems.AddFolder(".analyzers") | Out-Null
 $folder = $project.ProjectItems.Item(".analyzers")
