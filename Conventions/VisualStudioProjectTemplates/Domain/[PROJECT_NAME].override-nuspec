@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0"?>
 <package>
   <metadata>
-    <description>DESCRIPTION_HERE</description>
-    <tags>TAG1_HERE TAG2_HERE [SUBSYSTEM_NAME]</tags>
+    <description>Shared types (models and utilities) for [SUBSYSTEM_NAME]</description>
+    <tags>models modelobject utilities [SUBSYSTEM_NAME]</tags>
   </metadata>
 </package>

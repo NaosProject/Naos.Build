@@ -13,15 +13,18 @@ namespace [PROJECT_NAME]
     using System.CodeDom.Compiler;
     using System.Diagnostics.CodeAnalysis;
 
-    using [PROJECT_NAME_WITHOUT_DOMAIN_OR_TEST_SUFFIX].Serialization.Bson;
-    using [PROJECT_NAME_WITHOUT_DOMAIN_OR_TEST_SUFFIX].Serialization.Json;
+    using OBeautifulCode.Serialization.Bson;
+    using OBeautifulCode.Serialization.Json;
+
+    using [PROJECT_NAME_WITHOUT_TEST_SUFFIX].Serialization.Bson;
+    using [PROJECT_NAME_WITHOUT_TEST_SUFFIX].Serialization.Json;
 
     [ExcludeFromCodeCoverage]
     [GeneratedCode("[VISUAL_STUDIO_TEMPLATE_PACKAGE_ID]", "[VISUAL_STUDIO_TEMPLATE_PACKAGE_VERSION]")]
     public static class SerializationConfigurationTypes
     {
-        public static Type BsonConfigurationType => typeof([PROJECT_NAME_CLASSNAME_PREFIX]BsonSerializationConfiguration);
+        public static BsonSerializationConfigurationType BsonSerializationConfigurationType => typeof([PROJECT_NAME_CLASSNAME_PREFIX]BsonSerializationConfiguration).ToBsonSerializationConfigurationType();
 
-        public static Type JsonConfigurationType => typeof([PROJECT_NAME_CLASSNAME_PREFIX]JsonSerializationConfiguration);
+        public static JsonSerializationConfigurationType JsonSerializationConfigurationType => typeof([PROJECT_NAME_CLASSNAME_PREFIX]JsonSerializationConfiguration).ToJsonSerializationConfigurationType();
     }
 }

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0"?>
 <package>
   <metadata>
-    <description>JSON Serialization Configuration for types in [ORGANIZATION].[SUBSYSTEM_NAME]</description>
+    <description>JSON Serialization Configuration for types in [PROJECT_NAME_WITHOUT_SERIALIZATION_SUFFIX]</description>
     <tags>json serialization configuration [SUBSYSTEM_NAME]</tags>
   </metadata>
 </package>

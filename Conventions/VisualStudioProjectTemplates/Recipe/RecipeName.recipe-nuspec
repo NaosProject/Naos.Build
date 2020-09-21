@@ -1,0 +1,14 @@
+﻿<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>[SOLUTION_NAME].Recipes.RECIPE_NAME_HERE</id>
+    <description>DESCRIPTION_HERE</description>
+    <tags>TAGS_HERE snippet codeinclude utility shared recipe [SUBSYSTEM_NAME]</tags>
+    <dependencies>
+      <dependency id="Naos.CodeAnalysis.Recipes.SuppressBecause" version="1.0.124" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="Class1.cs" target="content\net462\.recipes\[SOLUTION_NAME]\Class1.cs" />
+  </files>
+</package>

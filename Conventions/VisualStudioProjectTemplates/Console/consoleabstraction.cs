@@ -12,10 +12,11 @@ namespace [PROJECT_NAME]
     using CLAP;
 
     using Naos.Bootstrapper;
-    using Naos.Build.Analyzers;
+    using Naos.CodeAnalysis.Recipes;
 
     /// <inheritdoc />
-    public class ConsoleAbstraction : ConsoleAbstractionBase
+    [SuppressMessage("Microsoft.Performance", "CA1812:AvoidUninstantiatedInternalClasses", Justification = NaosSuppressBecause.CA1812_AvoidUninstantiatedInternalClasses_ClassIsWiredIntoClapInProgramCs)]
+    internal class ConsoleAbstraction : ConsoleAbstractionBase
     {
         /// <summary>
         /// Does some work.

@@ -10,8 +10,6 @@
 namespace [PROJECT_NAME]
 {
     using System;
-    using System.CodeDom.Compiler;
-    using System.Diagnostics.CodeAnalysis;
 
     using FakeItEasy;
 
@@ -20,9 +18,14 @@ namespace [PROJECT_NAME]
     /// THIS CLASS EXISTS SO THAT THE DUMMY FACTORY CAN INHERIT FROM IT AND THE PROJECT CAN COMPILE.
     /// THIS WILL BE REPLACED BY A CODE GENERATED DEFAULT DUMMY FACTORY.
     /// </summary>
-    [ExcludeFromCodeCoverage]
-    [GeneratedCode("[VISUAL_STUDIO_TEMPLATE_PACKAGE_ID]", "[VISUAL_STUDIO_TEMPLATE_PACKAGE_VERSION]")]
-    public abstract class Default[PROJECT_NAME_CLASSNAME_PREFIX]DummyFactory : IDummyFactory
+    [System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+    [System.CodeDom.Compiler.GeneratedCode("[VISUAL_STUDIO_TEMPLATE_PACKAGE_ID]", "[VISUAL_STUDIO_TEMPLATE_PACKAGE_VERSION]")]
+#if ![SOLUTION_NAME_CONDITIONAL_COMPILATION_SYMBOL]
+    internal
+#else
+    public
+#endif
+    abstract class Default[PROJECT_NAME_CLASSNAME_PREFIX]DummyFactory : IDummyFactory
     {
         /// <inheritdoc />
         public Priority Priority => new FakeItEasy.Priority(1);
