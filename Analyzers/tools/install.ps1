@@ -13,11 +13,6 @@ $folder = $project.ProjectItems.Item(".analyzers")
 
 $folder.ProjectItems.AddFromFileCopy($styleCopDotJsonBasePath) | Out-Null
 $folder.ProjectItems.AddFromFileCopy($caDictionaryBasePath) | Out-Null
-$folder.ProjectItems.AddFromFileCopy($justificationsBasePathCustom) | Out-Null
-
-if (Test-Path $justificationsBaseDirectoryCustom) {
-    Remove-Item $justificationsBaseDirectoryCustom -Force -Recurse
-}
 
 # Fix up stylecop.json file (voodoo magic courtesy of StingyJack - https://github.com/dotnet/roslyn/issues/4655)
 $item = $folder.ProjectItems.Item("$(Split-Path $styleCopDotJsonBasePath -Leaf)")
