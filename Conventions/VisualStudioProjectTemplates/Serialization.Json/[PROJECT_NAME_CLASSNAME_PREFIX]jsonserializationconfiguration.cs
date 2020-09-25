@@ -15,7 +15,7 @@ namespace [PROJECT_NAME]
     public class [PROJECT_NAME_CLASSNAME_PREFIX]JsonSerializationConfiguration : JsonSerializationConfigurationBase
     {
         /// <inheritdoc />
-        protected override IReadOnlyCollection<Type> TypesToAutoRegister => new Type[]
+        protected override IReadOnlyCollection<TypeToRegisterForJson> TypesToRegisterForJson => new Type[]
         {
             // ADD TYPES TO REGISTER HERE
         };
