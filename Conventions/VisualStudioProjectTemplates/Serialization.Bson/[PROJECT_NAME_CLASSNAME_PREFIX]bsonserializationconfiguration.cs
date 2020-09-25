@@ -15,7 +15,7 @@ namespace [PROJECT_NAME]
     public class [PROJECT_NAME_CLASSNAME_PREFIX]BsonSerializationConfiguration : BsonSerializationConfigurationBase
     {
         /// <inheritdoc />
-        protected override IReadOnlyCollection<TypeToRegisterForBson> TypesToRegisterForBson => new Type[]
+        protected override IReadOnlyCollection<TypeToRegisterForBson> TypesToRegisterForBson => new TypeToRegisterForBson[]
         {
             // ADD TYPES TO REGISTER HERE
         };
