@@ -16,8 +16,8 @@ namespace [PROJECT_NAME]
     using OBeautifulCode.Serialization.Bson;
     using OBeautifulCode.Serialization.Json;
 
-    using [PROJECT_NAME_WITHOUT_TEST_SUFFIX].Serialization.Bson;
-    using [PROJECT_NAME_WITHOUT_TEST_SUFFIX].Serialization.Json;
+    using [SOLUTION_NAME].Serialization.Bson;
+    using [SOLUTION_NAME].Serialization.Json;
 
     [ExcludeFromCodeCoverage]
     [GeneratedCode("[VISUAL_STUDIO_TEMPLATE_PACKAGE_ID]", "[VISUAL_STUDIO_TEMPLATE_PACKAGE_VERSION]")]
