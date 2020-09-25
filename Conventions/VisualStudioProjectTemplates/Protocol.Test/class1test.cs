@@ -1,6 +1,6 @@
 ﻿// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="Class1Test.cs" company="OBeautifulCode">
-//   Copyright (c) OBeautifulCode 2018. All rights reserved.
+// <copyright file="Class1Test.cs" company="Naos Project">
+//    Copyright (c) Naos Project 2019. All rights reserved.
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
 
