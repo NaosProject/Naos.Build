@@ -8,6 +8,7 @@
         <dependency id="[PROJECT_NAME_WITHOUT_TEST_SUFFIX]" version="$version$" />
         <dependency id="OBeautifulCode.AutoFakeItEasy" version ="1.0.126" />
         <dependency id="Naos.CodeAnalysis.Recipes.SuppressBecause" version="1.0.6" />
+        <dependency id="Naos.Protocol.Recipes.DummyFactory" version="1.0.63" />
     </dependencies>
   </metadata>
   <files>
