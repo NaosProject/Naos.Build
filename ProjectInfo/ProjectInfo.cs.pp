@@ -9,6 +9,8 @@
 
 namespace $rootnamespace$
 {
+    using System.Reflection;
+    
     /// <summary>
     /// Project-related information.
     /// </summary>
