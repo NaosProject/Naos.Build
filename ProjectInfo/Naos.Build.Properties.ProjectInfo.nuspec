@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>Naos.Build.Properties.ProjectInfo</id>
+    <version>$version$</version>
+	<authors>Naos Project</authors>
+    <copyright>Copyright (c) Naos Project 2019. All rights reserved.</copyright>
+    <projectUrl>http://naosproject.com</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/NaosProject/Naos.Build/master/NAOS-NuGet-Icon-v2.png</iconUrl>
+    <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>The internal class to provide project information for use by other projects or subsystems.</description>
+    <tags>CI, Build</tags>
+    <developmentDependency>true</developmentDependency>
+	<dependencies>
+	</dependencies>
+  </metadata>
+  <files>
+    <file src="ProjectInfo.cs.pp" target="content/net462/Properties/ProjectInfo.cs.pp" />
+  </files>
+</package>
