@@ -9,15 +9,33 @@ namespace [PROJECT_NAME]
     using System;
     using System.Collections.Generic;
 
+    using Naos.Protocol.Domain;
+    using Naos.Protocol.Serialization.Json;
+    
     using OBeautifulCode.Serialization.Json;
 
     /// <inheritdoc />
     public class [PROJECT_NAME_CLASSNAME_PREFIX]JsonSerializationConfiguration : JsonSerializationConfigurationBase
     {
         /// <inheritdoc />
-        protected override IReadOnlyCollection<TypeToRegisterForJson> TypesToRegisterForJson => new TypeToRegisterForJson[]
-        {
-            // ADD TYPES TO REGISTER HERE
-        };
+        protected override IReadOnlyCollection<string> TypeToRegisterNamespacePrefixFilters =>
+            new[]
+            {
+                [SOLUTION_NAME].Domain.ProjectInfo.Namespace,
+            };
+
+        /// <inheritdoc />
+        protected override IReadOnlyCollection<JsonSerializationConfigurationType> DependentJsonSerializationConfigurationTypes =>
+            new[]
+            {
+                typeof(ProtocolJsonSerializationConfiguration).ToJsonSerializationConfigurationType(),
+            };
+            
+        /// <inheritdoc />
+        protected override IReadOnlyCollection<TypeToRegisterForJson> TypesToRegisterForJson => new Type[0]
+            .Concat(new[] { typeof(IModel) })
+            .Concat(Naos.Protocol.Domain.ProjectInfo.Assembly.GetPublicEnumTypes())
+            .Select(_ => _.ToTypeToRegisterForJson())
+            .ToList();
     }
 }

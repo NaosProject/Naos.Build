@@ -9,15 +9,33 @@ namespace [PROJECT_NAME]
     using System;
     using System.Collections.Generic;
 
+    using Naos.Protocol.Domain;
+    using Naos.Protocol.Serialization.Bson;
+    
     using OBeautifulCode.Serialization.Bson;
 
     /// <inheritdoc />
     public class [PROJECT_NAME_CLASSNAME_PREFIX]BsonSerializationConfiguration : BsonSerializationConfigurationBase
     {
         /// <inheritdoc />
-        protected override IReadOnlyCollection<TypeToRegisterForBson> TypesToRegisterForBson => new TypeToRegisterForBson[]
-        {
-            // ADD TYPES TO REGISTER HERE
-        };
+        protected override IReadOnlyCollection<string> TypeToRegisterNamespacePrefixFilters =>
+            new[]
+            {
+                [SOLUTION_NAME].Domain.ProjectInfo.Namespace,
+            };
+            
+        /// <inheritdoc />
+        protected override IReadOnlyCollection<BsonSerializationConfigurationType> DependentBsonSerializationConfigurationTypes =>
+            new[]
+            {
+                typeof(ProtocolBsonSerializationConfiguration).ToBsonSerializationConfigurationType(),
+            };
+            
+        /// <inheritdoc />
+        protected override IReadOnlyCollection<TypeToRegisterForBson> TypesToRegisterForBson => new Type[0]
+            .Concat(new[] { typeof(IModel) })
+            .Concat(Naos.Protocol.Domain.ProjectInfo.Assembly.GetPublicEnumTypes())
+            .Select(_ => _.ToTypeToRegisterForBson())
+            .ToList();
     }
 }
