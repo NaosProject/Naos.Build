@@ -8,11 +8,10 @@ namespace [PROJECT_NAME]
 {
     using System;
     using System.Collections.Generic;
-
-    using Naos.Protocol.Domain;
+    using System.Linq;
     using Naos.Protocol.Serialization.Json;
-    
     using OBeautifulCode.Serialization.Json;
+    using OBeautifulCode.Type;
 
     /// <inheritdoc />
     public class [PROJECT_NAME_CLASSNAME_PREFIX]JsonSerializationConfiguration : JsonSerializationConfigurationBase
@@ -30,11 +29,11 @@ namespace [PROJECT_NAME]
             {
                 typeof(ProtocolJsonSerializationConfiguration).ToJsonSerializationConfigurationType(),
             };
-            
+
         /// <inheritdoc />
         protected override IReadOnlyCollection<TypeToRegisterForJson> TypesToRegisterForJson => new Type[0]
             .Concat(new[] { typeof(IModel) })
-            .Concat(Naos.Protocol.Domain.ProjectInfo.Assembly.GetPublicEnumTypes())
+            .Concat([SOLUTION_NAME].Domain.ProjectInfo.Assembly.GetPublicEnumTypes())
             .Select(_ => _.ToTypeToRegisterForJson())
             .ToList();
     }
