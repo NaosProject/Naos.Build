@@ -12,6 +12,7 @@ namespace [PROJECT_NAME]
     using Naos.Protocol.Serialization.Json;
     using OBeautifulCode.Serialization.Json;
     using OBeautifulCode.Type;
+    using OBeautifulCode.Type.Recipes;
 
     /// <inheritdoc />
     public class [PROJECT_NAME_CLASSNAME_PREFIX]JsonSerializationConfiguration : JsonSerializationConfigurationBase
