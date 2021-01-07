@@ -17,8 +17,8 @@
   <TemplateContent>
     <Project File="ConsoleApplication.csproj" ReplaceParameters="true">
       <ProjectItem ReplaceParameters="true" TargetFileName="Properties\AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Properties\GlobalSuppressions.cs">GlobalSuppressions.cs</ProjectItem>
       <ProjectItem ReplaceParameters="true" OpenInEditor="true">Class1Test.cs</ProjectItem>
-      <ProjectItem ReplaceParameters="true" OpenInEditor="true">GlobalSuppressions.cs</ProjectItem>
     </Project>
   </TemplateContent>
 </VSTemplate>
