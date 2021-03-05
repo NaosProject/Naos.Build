@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0"?>
 <package >
   <metadata>
-    <id>[PROJECT_NAME_WITHOUT_TEST_SUFFIX].Recipes.DummyFactory</id>
+    <id>[PROJECT_NAME_WITHOUT_DOMAIN_OR_TEST_SUFFIX].Recipes.DummyFactory</id>
     <description>A Dummy Factory for types in [PROJECT_NAME_WITHOUT_TEST_SUFFIX]</description>
     <tags>dummyfactory dummy factory fakeiteasy autofixture snippet codeinclude utility shared recipe [SUBSYSTEM_NAME]</tags>
     <dependencies>
@@ -12,7 +12,7 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="[PROJECT_NAME_CLASSNAME_PREFIX]DummyFactory.cs" target="content\net462\.recipes\[SOLUTION_NAME]\[PROJECT_NAME_CLASSNAME_PREFIX]DummyFactory.cs" />
-    <file src="[PROJECT_NAME_CLASSNAME_PREFIX]DummyFactory.designer.cs" target="content\net462\.recipes\[SOLUTION_NAME]\[PROJECT_NAME_CLASSNAME_PREFIX]DummyFactory.designer.cs" />
+    <file src="[PROJECT_NAME_WITHOUT_DOMAIN_OR_TEST_SUFFIX]DummyFactory.cs" target="content\net462\.recipes\[SOLUTION_NAME]\[PROJECT_NAME_WITHOUT_DOMAIN_OR_TEST_SUFFIX]DummyFactory.cs" />
+    <file src="[PROJECT_NAME_WITHOUT_DOMAIN_OR_TEST_SUFFIX]DummyFactory.designer.cs" target="content\net462\.recipes\[SOLUTION_NAME]\[PROJECT_NAME_WITHOUT_DOMAIN_OR_TEST_SUFFIX]DummyFactory.designer.cs" />
   </files>
 </package>
