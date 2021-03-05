@@ -12,7 +12,7 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="[PROJECT_NAME_WITHOUT_DOMAIN_OR_TEST_SUFFIX]DummyFactory.cs" target="content\net462\.recipes\[SOLUTION_NAME]\[PROJECT_NAME_WITHOUT_DOMAIN_OR_TEST_SUFFIX]DummyFactory.cs" />
-    <file src="[PROJECT_NAME_WITHOUT_DOMAIN_OR_TEST_SUFFIX]DummyFactory.designer.cs" target="content\net462\.recipes\[SOLUTION_NAME]\[PROJECT_NAME_WITHOUT_DOMAIN_OR_TEST_SUFFIX]DummyFactory.designer.cs" />
+    <file src="[PROJECT_NAME_CLASSNAME_PREFIX]DummyFactory.cs" target="content\net462\.recipes\[SOLUTION_NAME]\[PROJECT_NAME_CLASSNAME_PREFIX]DummyFactory.cs" />
+    <file src="[PROJECT_NAME_CLASSNAME_PREFIX]DummyFactory.designer.cs" target="content\net462\.recipes\[SOLUTION_NAME]\[PROJECT_NAME_CLASSNAME_PREFIX]DummyFactory.designer.cs" />
   </files>
 </package>
