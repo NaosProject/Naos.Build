@@ -9,6 +9,7 @@ namespace [PROJECT_NAME]
     using System;
     using System.Collections.Generic;
     using System.Linq;
+    using Naos.Database.Serialization.Json;
     using Naos.Protocol.Serialization.Json;
     using OBeautifulCode.Serialization.Json;
     using OBeautifulCode.Type;
@@ -29,6 +30,7 @@ namespace [PROJECT_NAME]
             new[]
             {
                 typeof(ProtocolJsonSerializationConfiguration).ToJsonSerializationConfigurationType(),
+                typeof(DatabaseJsonSerializationConfiguration).ToJsonSerializationConfigurationType(),
             };
 
         /// <inheritdoc />
